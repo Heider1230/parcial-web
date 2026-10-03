@@ -1,0 +1,1 @@
+import React from "react"; export function Input(p: React.InputHTMLAttributes<HTMLInputElement>){return <input {...p} className={"entrada "+(p.className||"")}/>;}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart X1 - Anime.js</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1 class="titulo">Smart X1</h1>
+  <p class="subtitulo">Mini presentación interactiva de un producto ficticio</p>
+</header>
+
+<main>
+  <section class="producto">
+    <div class="producto-img">📱</div>
+    <div>
+      <h2>Smart X1</h2>
+      <p>Un dispositivo moderno, rápido y pensado para el uso diario.</p>
+      <p class="precio">$899.000</p>
+      <button id="btnComprar">Comprar ahora</button>
+    </div>
+  </section>
+
+  <section class="cards">
+    <article class="card">
+      <span>⚡</span>
+      <h3>Rápido</h3>
+      <p>Buen rendimiento para las tareas diarias.</p>
+    </article>
+    <article class="card">
+      <span>🔋</span>
+      <h3>Batería</h3>
+      <p>Diseñada para acompañarte durante el día.</p>
+    </article>
+    <article class="card">
+      <span>📷</span>
+      <h3>Cámara</h3>
+      <p>Captura fotografías y videos con facilidad.</p>
+    </article>
+    <article class="card">
+      <span>🔒</span>
+      <h3>Seguridad</h3>
+      <p>Protección para la información del usuario.</p>
+    </article>
+  </section>
+
+  <p id="mensaje"></p>
+  <button id="btnRepetir">Reproducir de nuevo</button>
+</main>
+
+<!-- La librería se carga antes de app.js -->
+<script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

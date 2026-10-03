@@ -1,0 +1,1 @@
+import React from "react"; export function Button(p: React.ButtonHTMLAttributes<HTMLButtonElement>){return <button {...p} className={"boton "+(p.className||"")}/>;}

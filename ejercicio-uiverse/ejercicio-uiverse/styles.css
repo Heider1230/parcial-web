@@ -1,0 +1,274 @@
+/* =====================================================
+   IDENTIDAD GENERAL
+===================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f1e5;
+  color: #33251d;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav h2 {
+  margin-right: auto;
+  color: #6f3f22;
+}
+
+.nav a {
+  color: #33251d;
+  text-decoration: none;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ead5bd, #fffaf2);
+  padding-bottom: 60px;
+}
+
+.hero-contenido {
+  max-width: 1000px;
+  margin: 45px auto 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.etiqueta {
+  color: #a05a2c;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 70px;
+  color: #5b321e;
+}
+
+.hero-contenido p {
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   COMPONENTE UIVERSE 1: BUTTON
+   Clase renombrada: .uiverse-boton
+===================================================== */
+.uiverse-boton {
+  border: none;
+  border-radius: 10px;
+  padding: 14px 25px;
+  background: #6f3f22;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.uiverse-boton:hover {
+  transform: translateY(-3px);
+  background: #8a512e;
+}
+
+.secundario {
+  background: #a05a2c;
+}
+
+/* =====================================================
+   COMPONENTE UIVERSE 2: LOADER
+   Clase renombrada: .uiverse-loader
+===================================================== */
+.uiverse-loader {
+  width: 120px;
+  height: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.uiverse-loader span {
+  background: #6f3f22;
+  border-radius: 8px;
+  animation: pulso 1s infinite alternate;
+}
+
+.uiverse-loader span:nth-child(2) {
+  animation-delay: .15s;
+}
+
+.uiverse-loader span:nth-child(3) {
+  animation-delay: .30s;
+}
+
+.uiverse-loader span:nth-child(4) {
+  animation-delay: .45s;
+}
+
+@keyframes pulso {
+  to {
+    transform: scale(.55);
+    opacity: .45;
+  }
+}
+
+/* =====================================================
+   COMPONENTE UIVERSE 3: CARD
+   Clase renombrada: .uiverse-card
+===================================================== */
+.seccion {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.uiverse-card {
+  max-width: 420px;
+  margin: 25px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 18px;
+  border: 1px solid #ead5bd;
+  box-shadow: 0 12px 30px rgba(75, 50, 30, .15);
+  transition: .25s;
+}
+
+.uiverse-card:hover {
+  transform: translateY(-6px);
+}
+
+.icono {
+  font-size: 55px;
+}
+
+.uiverse-card h3 {
+  color: #6f3f22;
+  margin: 15px 0 10px;
+}
+
+.uiverse-card p {
+  line-height: 1.6;
+}
+
+.precio {
+  color: #a05a2c;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* =====================================================
+   COMPONENTE UIVERSE 4: INPUT
+   Clase renombrada: .uiverse-input
+===================================================== */
+.formulario {
+  background: #fffaf2;
+  border-radius: 18px;
+  margin-bottom: 50px;
+}
+
+.formulario h2 {
+  margin-bottom: 20px;
+}
+
+.formulario label {
+  display: block;
+  text-align: left;
+  margin: 12px 0 7px;
+  font-weight: bold;
+}
+
+.uiverse-input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #c9ad94;
+  border-radius: 9px;
+  outline: none;
+  font-size: 16px;
+}
+
+.uiverse-input:focus {
+  border-color: #6f3f22;
+}
+
+/* =====================================================
+   COMPONENTE UIVERSE 5: TOGGLE
+   Clase renombrada: .uiverse-toggle
+===================================================== */
+.uiverse-toggle {
+  display: flex !important;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0 !important;
+}
+
+.uiverse-toggle input {
+  display: none;
+}
+
+.uiverse-switch {
+  width: 52px;
+  height: 28px;
+  background: #c9ad94;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.uiverse-switch::after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: .25s;
+}
+
+.uiverse-toggle input:checked + .uiverse-switch {
+  background: #6f3f22;
+}
+
+.uiverse-toggle input:checked + .uiverse-switch::after {
+  transform: translateX(24px);
+}
+
+#mensaje {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #6f3f22;
+}
+
+footer {
+  background: #33251d;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+  .hero-contenido {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+}

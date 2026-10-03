@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Andino - Uiverse</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <nav class="nav">
+    <h2>Café Andino</h2>
+    <a href="#producto">Producto</a>
+    <a href="#registro">Registro</a>
+  </nav>
+
+  <section class="hero-contenido">
+    <div>
+      <p class="etiqueta">EMPRENDIMIENTO FICTICIO</p>
+      <h1>Café Andino</h1>
+      <p>Un café colombiano para disfrutar en cada momento.</p>
+      <button class="uiverse-boton" id="btnComprar">Comprar ahora</button>
+    </div>
+
+    <!-- COMPONENTE 1: LOADER -->
+    <div class="uiverse-loader" aria-label="Loader">
+      <span></span><span></span><span></span><span></span>
+    </div>
+  </section>
+</header>
+
+<main>
+  <section id="producto" class="seccion">
+    <h2>Conoce nuestro café</h2>
+
+    <!-- COMPONENTE 2: CARD -->
+    <article class="uiverse-card">
+      <div class="icono">☕</div>
+      <h3>Café Andino Premium</h3>
+      <p>Grano seleccionado, tostado medio y sabor equilibrado.</p>
+      <p class="precio">$28.000</p>
+    </article>
+  </section>
+
+  <section id="registro" class="seccion formulario">
+    <h2>Recibe novedades</h2>
+
+    <!-- COMPONENTE 3: INPUT -->
+    <label for="correo">Correo electrónico</label>
+    <input class="uiverse-input" id="correo" type="email"
+           placeholder="tu@email.com">
+
+    <!-- COMPONENTE 4: TOGGLE -->
+    <label class="uiverse-toggle">
+      <span>Recibir promociones</span>
+      <input id="promociones" type="checkbox">
+      <span class="uiverse-switch"></span>
+    </label>
+
+    <button class="uiverse-boton secundario" id="btnEnviar">
+      Suscribirme
+    </button>
+
+    <p id="mensaje"></p>
+  </section>
+</main>
+
+<footer>
+  <p>Actividad de profundización – Uiverse.io</p>
+  <p>Componentes adaptados y clases renombradas para este ejercicio.</p>
+
+  <!-- Enlaces y autores de los componentes utilizados -->
+  <small>
+    Button: cssbuttons-io |
+    Card: Yaya12085 |
+    Input: Yaseen549 |
+    Loader: JkHuger |
+    Toggle: JaydipPrajapati1910
+  </small>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
